@@ -15,15 +15,6 @@ export const Home = () => (
           </div>
         );
       })}
-      {/*<div className="col-sm-4 mb-4">
-        <Card />
-      </div>
-      <div className="col-sm-4 mb-4">
-        <Card />
-      </div>
-      <div className="col-sm-4 mb-4">
-        <Card />
-      </div>*/}
     </div>
   </Fragment>
 );
