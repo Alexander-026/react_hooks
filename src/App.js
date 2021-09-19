@@ -6,7 +6,7 @@ import { Home } from "./components/Home/Home";
 import { Information } from "./components/Information/Information";
 import { Navbar } from "./components/Navbar/Navbar";
 import { Profile } from "./components/Profile/Profile";
-import { AlertState } from "./context/alert/AlertState.js";
+import { AlertState } from "./context/alert/alertState.js";
 import { GithubState } from "./context/github/GithubState";
 
 function App() {
