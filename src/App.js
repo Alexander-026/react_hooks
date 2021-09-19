@@ -7,25 +7,28 @@ import { Information } from "./components/Information/Information";
 import { Navbar } from "./components/Navbar/Navbar";
 import { Profile } from "./components/Profile/Profile";
 import { AlertState } from "./context/alert/AlertState.js";
+import { GithubState } from "./context/github/GithubState";
 
 function App() {
   return (
-    <AlertState>
-      <BrowserRouter>
-        <Fragment>
-          <Navbar />
-          <div className="container pt-4">
-            <Alert alert={{ text: "test Alert" }} />
-            <Switch>
-              <Route exact path="/" component={Home} />
-              <Route path="/information" component={Information} />
-              <Route path="/profile" component={Profile} />
-              <Route />
-            </Switch>
-          </div>
-        </Fragment>
-      </BrowserRouter>
-    </AlertState>
+    <GithubState>
+      <AlertState>
+        <BrowserRouter>
+          <Fragment>
+            <Navbar />
+            <div className="container pt-4">
+              <Alert alert={{ text: "test Alert" }} />
+              <Switch>
+                <Route exact path="/" component={Home} />
+                <Route path="/information" component={Information} />
+                <Route path="/profile" component={Profile} />
+                <Route />
+              </Switch>
+            </div>
+          </Fragment>
+        </BrowserRouter>
+      </AlertState>
+    </GithubState>
   );
 }
 
